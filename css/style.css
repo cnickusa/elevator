@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, black, #c0c0c0); /* Replace with your desired background */
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-image: url(https://img.freepik.com/premium-photo/the-wall-built-of-fine-granite-gravel-gray-and-black-bonded-with-cement_423299-4290.jpg);
+}
+
+.building {
+  position: relative;
+  width: 150px; /* Adjust the width of the building */
+  height: 500px; /* Adjust the height of the building */
+  border: 1px solid black;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.elevator {
+  position: absolute;
+  bottom: 0;
+  width: 120px; /* Adjust the width of the elevator */
+  height: 20%;
+  background-color: aquamarine;
+  transition: bottom 2s ease-in-out;
+}
+
+/* .elevator {
+  width: 100px;
+  height: 200px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  transition: bottom 1s;
+} */
+
+/* Add CSS transition for smooth movement */
+
+.floor {
+  font-size: 24px;
+  font-weight: bold;
+  width: 100%;
+  height: 20%;
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px; /* Increase font size to fit larger building */
+  color: crimson;
+}
+
+button {
+  margin-top: 10px 5px;
+}
+
+.header {
+  background-color: lightgreen;
+}
+
+.buttons-panel {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elevator</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="building">
+    <!-- floors go here -->
+    <div class="floor" data-floor="4">4</div>
+    <div class="floor" data-floor="3">3</div>
+    <div class="floor" data-floor="2">2</div>
+    <div class="floor" data-floor="1">1</div>
+    <div class="elevator"></div>
+  </div>
+  <div class="buttons-panel">
+    <button id="up-btn">Up</button>
+    <button id="down-btn">Down</button>
+    <button id="go-btn">Prompt</button>
+  </div>
+  <!-- Header start -->
+  <header class="header">
+    <div class="building">
+      <div class="elevator">
+        <div class="floor">Elevator</div>
+        <button onclick="moveTo(-1)">4</button>
+        <button onclick="moveTo(1)">3</button>
+        <button onclick="moveTo(2)">2</button>
+        <button onclick="moveTo(3)">1</button>
+        <button onclick="moveTo(4)">-1</button>
+      </div>
+    </div>
+  </header>
+  <!-- Header end -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
